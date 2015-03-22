@@ -24,6 +24,7 @@ def println(*args, sep=' ', end='\n'):
     global output
     output += sep.join(args) + end
 
+
 def print_headers():
     for k, v in headers:
         print('{}: {}'.format(k, v))
