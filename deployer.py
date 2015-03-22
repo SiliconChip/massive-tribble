@@ -10,11 +10,19 @@ output = ''
 
 
 def main():
-    global output, headers
-    output += securedata.SECURE_MESSAGE + '\n'
+    println(securedata.SECURE_MESSAGE)
     print_headers()
     print_content()
 
+
+def add_header(k, v):
+    global headers
+    headers[k] = v
+
+
+def println(*args, sep=' ', end='\n'):
+    global output
+    output += sep.join(args) + end
 
 def print_headers():
     for k, v in headers:
