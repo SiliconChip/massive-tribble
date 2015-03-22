@@ -55,3 +55,7 @@ target/
 
 # PyCharm
 .idea/
+
+# Secure data. No peeking!
+securedata.py
+
